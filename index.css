@@ -1,0 +1,125 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+body {
+  margin: 16rem;
+  margin-top: 8rem;
+}
+.main {
+  height: 70vh;
+}
+.piano {
+  height: 80%;
+  background: linear-gradient(black, red);
+  border: 30px solid black;
+  border-radius: 50px;
+  position: relative;
+  margin: auto;
+}
+
+.blackkeys {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  margin-top: 10%;
+}
+.blackkeys div {
+  width: 8%;
+  height: 100%;
+  border: 1px solid white;
+  background: black;
+}
+
+.whitekeys {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 80%;
+  margin: auto;
+  margin-top: 10%;
+}
+.whitekeys div {
+  width: 6.9%;
+  height: 100%;
+  border: 1px solid black;
+  background: linear-gradient(grey, white);
+}
+@media only screen and (min-width: 993px) and (max-width: 1300px) {
+  body {
+    margin: 6rem;
+  }
+  .piano {
+    height: 80%;
+    border-bottom: 110px solid black;
+    border-radius: 110px;
+  }
+  .blackkeys {
+    margin-top: 22%;
+    height: 130px;
+  }
+  .whitekeys {
+    margin-top: 22%;
+    height: 250px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  body {
+    margin: 5rem;
+  }
+  .piano {
+    height: 50%;
+    border-bottom: 70px solid black;
+    border-radius: 110px;
+  }
+  .blackkeys {
+    margin-top: 40%;
+    height: 100px;
+  }
+  .whitekeys {
+    margin-top: 40%;
+    height: 200px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  body {
+    margin: 5rem;
+  }
+  .piano {
+    height: 80%;
+    border-bottom: 50px solid black;
+    border-radius: 80px;
+  }
+  .blackkeys {
+    margin-top: 22%;
+  }
+  .whitekeys {
+    margin-top: 22%;
+    height: 212px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  body {
+    margin: 2rem;
+    margin-top: 8rem;
+  }
+  .main {
+    height: 30vh;
+  }
+  .piano {
+    transform: rotate(90deg);
+    margin: -96px;
+    margin-top: 290px;
+    border-bottom: 50px solid black;
+  }
+  .blackkeys {
+    margin-top: 12%;
+  }
+  .whitekeys {
+    margin-top: 12%;
+  }
+}
